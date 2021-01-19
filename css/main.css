@@ -17,10 +17,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #444;
-  --highlight-foreground: #ddd;
-  --highlight-gutter-background: #535353;
-  --highlight-gutter-foreground: #cdcdcd;
+  --highlight-background: #303030;
+  --highlight-foreground: #c5c8c6;
+  --highlight-gutter-background: #3e3f3f;
+  --highlight-gutter-foreground: #b6b8b7;
 }
 html {
   line-height: 1.15; /* 1 */
@@ -358,69 +358,94 @@ td {
   top: -5px;
   transform: rotate(-45deg);
 }
-/*
+/* lioshi Theme */
+/* Original theme - https://github.com/lioshi/vscode-lioshi-theme */
 
-Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+/* Comment */
+.hljs-comment {
+  color: #8d8d8d;
+}
 
-*/
+/* quote */
+.hljs-quote {
+  color: #b3c7d8;
+}
+
+/* Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: #cc6666;
+}
+
+/* Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-subst
+.hljs-link {
+  color: #de935f;
+}
+
+/* Yellow */
+.hljs-attribute {
+  color: #f0c674;
+}
+
+/* Green */
+.hljs-string,
+.hljs-bullet,
+.hljs-params,
+.hljs-addition {
+  color: #b5bd68;
+}
+
+/* Blue */
+.hljs-title,
+.hljs-meta,
+.hljs-section {
+  color: #81a2be;
+}
+
+/* Purple */
+.hljs-selector-tag,
+.hljs-keyword,
+.hljs-function,
+.hljs-class {
+  color: #be94bb;
+}
+
+/* Purple light */
+.hljs-symbol {
+  color: #dbc4d9;
+}
 
 .hljs {
   display: block;
   overflow-x: auto;
+  background: #303030;
+  color: #c5c8c6;
   padding: 0.5em;
-  background: #444;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-section,
-.hljs-link {
-  color: white;
-}
-
-.hljs,
-.hljs-subst {
-  color: #ddd;
-}
-
-.hljs-string,
-.hljs-title,
-.hljs-name,
-.hljs-type,
-.hljs-attribute,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-built_in,
-.hljs-addition,
-.hljs-variable,
-.hljs-template-tag,
-.hljs-template-variable {
-  color: #d88;
-}
-
-.hljs-comment,
-.hljs-quote,
-.hljs-deletion,
-.hljs-meta {
-  color: #777;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-title,
-.hljs-section,
-.hljs-doctag,
-.hljs-type,
-.hljs-name,
-.hljs-strong {
-  font-weight: bold;
 }
 
 .hljs-emphasis {
   font-style: italic;
 }
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+
+
+
 
 code,
 kbd,
