@@ -3,7 +3,8 @@
   <entry>
     <title>git命令</title>
     <url>/2021/01/15/git%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git init - 初始化仓库</span><br><span class="line">git add . - 添加文件到暂存区/仓库</span><br><span class="line">git commit - 将暂存区内容添加到仓库中</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">-拷贝一份远程仓库（下载一个远程项目）</span></span><br><span class="line"><span class="title">git</span> status -查看仓库当前的状态，显示有变更的文件</span><br><span class="line">git diff -比较文件的不同，即暂存区和工作区的差异</span><br><span class="line">git reset -回退版本</span><br><span class="line">git rm -删除工作区文件git mv -移动或重命名工作区文件</span><br><span class="line">git log -查看历史提交记录</span><br><span class="line">git blame <span class="tag">&lt;file&gt;</span> -以列表形式查看指定文件的历史修改记录</span><br><span class="line">git remote -远程仓库操作</span><br><span class="line">git fetch -从远程获取代码库</span><br><span class="line">git pull -下载远程代码并合并</span><br><span class="line">git push -上传远程代码并合并</span><br><span class="line">git branch (branchname) -创建分支命令</span><br><span class="line">    git branch 没有参数时，git branch 会列出你在本地的分支</span><br><span class="line">git checkout (branchname) -切换分支命令git merge -合并分支命令</span><br><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">0</span> -创建一个带注解的标签</span><br><span class="line">    git <span class="keyword">tag</span> <span class="title">-查看所有标签</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content><![CDATA[<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git init - 初始化仓库</span><br><span class="line">git add . - 添加文件到暂存区/仓库</span><br><span class="line">git commit - 将暂存区内容添加到仓库中</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">-拷贝一份远程仓库（下载一个远程项目）</span></span><br><span class="line"><span class="title">git</span> status -查看仓库当前的状态，显示有变更的文件</span><br><span class="line">git diff -比较文件的不同，即暂存区和工作区的差异</span><br><span class="line">git reset -回退版本</span><br><span class="line">git rm -删除工作区文件git mv -移动或重命名工作区文件</span><br><span class="line">git log -查看历史提交记录</span><br><span class="line">git blame <span class="tag">&lt;file&gt;</span> -以列表形式查看指定文件的历史修改记录</span><br><span class="line">git remote -远程仓库操作</span><br><span class="line">git fetch -从远程获取代码库</span><br><span class="line">git pull -下载远程代码并合并</span><br><span class="line">git push -上传远程代码并合并</span><br><span class="line">git branch (branchname) -创建分支命令</span><br><span class="line">    git branch 没有参数时，git branch 会列出你在本地的分支</span><br><span class="line">git checkout (branchname) -切换分支命令git merge -合并分支命令</span><br><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">0</span> -创建一个带注解的标签</span><br><span class="line">    git <span class="keyword">tag</span> <span class="title">-查看所有标签</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
       <categories>
         <category>转载</category>
       </categories>
@@ -14,7 +15,7 @@
   <entry>
     <title>Hexo</title>
     <url>/2021/01/15/hexo/</url>
-    <content><![CDATA[<h2 id="出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME-md文件，造成通过域名无法访问"><a href="#出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME-md文件，造成通过域名无法访问" class="headerlink" title="出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME.md文件，造成通过域名无法访问"></a>出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME.md文件，造成通过域名无法访问</h2><h2 id="解决办法为在根目录source文件下创建CNAME文件，-无后缀"><a href="#解决办法为在根目录source文件下创建CNAME文件，-无后缀" class="headerlink" title="解决办法为在根目录source文件下创建CNAME文件，*无后缀"></a>解决办法为在根目录source文件下创建CNAME文件，*无后缀</h2>]]></content>
+    <content><![CDATA[<h2 id="出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME-md文件，造成通过域名无法访问"><a href="#出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME-md文件，造成通过域名无法访问" class="headerlink" title="出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME.md文件，造成通过域名无法访问"></a>出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME.md文件，造成通过域名无法访问</h2><h2 id="解决办法为在根目录source文件下创建CNAME文件，-无后缀"><a href="#解决办法为在根目录source文件下创建CNAME文件，-无后缀" class="headerlink" title="解决办法为在根目录source文件下创建CNAME文件，*无后缀"></a>解决办法为在根目录source文件下创建CNAME文件，*无后缀</h2><a id="more"></a>]]></content>
       <categories>
         <category>原创</category>
       </categories>
@@ -28,7 +29,19 @@
     <content><![CDATA[<p>node与express:</p>
 <figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> xxx//文件夹名称</span><br><span class="line">npm init //新建node项目</span><br><span class="line">npm install <span class="built_in">express</span> --<span class="built_in">save</span></span><br><span class="line">npm install <span class="built_in">express</span>-grenerator -g</span><br><span class="line"><span class="built_in">express</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <p>vue与vue/cli:</p>
-<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> install @vue/cli -g</span><br><span class="line">vue create xxx</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> install @vue/cli -g</span><br><span class="line">vue create xxx</span><br></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>原创</category>
+      </categories>
+      <tags>
+        <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node.js与vue.js设置跨域</title>
+    <url>/2021/01/22/node-js%E4%B8%8Evue-js%E8%AE%BE%E7%BD%AE%E8%B7%A8%E5%9F%9F/</url>
+    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">一、vue.js前端设置跨域：</span><br><span class="line">在根目录下创建vue.config.js文件，然后写入：</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    devServer:&#123;</span><br><span class="line">        proxy:&#123;</span><br><span class="line">            <span class="string">&quot;/api&quot;</span>:&#123;</span><br><span class="line">                target:<span class="string">&quot;http://localhost:3000/users&quot;</span>,</span><br><span class="line">                ws: <span class="literal">true</span>, <span class="comment">//代理的WebSockets</span></span><br><span class="line">                changeOrigin: <span class="literal">true</span>, <span class="comment">//需要虚拟主机站点</span></span><br><span class="line">                pathRewrite: &#123;</span><br><span class="line">                    <span class="string">&quot;^/api&quot;</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">二、node.js后端设置跨域：</span><br><span class="line">在app.js里加入：</span><br><span class="line">app.all(<span class="string">&#x27;*&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line">res.header(<span class="string">&quot;Access-Control-Allow-Origin&quot;</span>, <span class="string">&quot;*&quot;</span>);</span><br><span class="line">res.header(<span class="string">&quot;Access-Control-Allow-Headers&quot;</span>, <span class="string">&quot;X-Requested-With&quot;</span>);</span><br><span class="line">res.header(<span class="string">&quot;Access-Control-Allow-Methods&quot;</span>,<span class="string">&quot;PUT,POST,GET,DELETE,OPTIONS&quot;</span>);</span><br><span class="line">res.header(<span class="string">&quot;X-Powered-By&quot;</span>,<span class="string">&#x27; 3.2.1&#x27;</span>);</span><br><span class="line">res.header(<span class="string">&quot;Content-Type&quot;</span>, <span class="string">&quot;application/json;charset=utf-8&quot;</span>);</span><br><span class="line">next();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>原创</category>
       </categories>
@@ -39,7 +52,7 @@
   <entry>
     <title>第一篇weblog</title>
     <url>/2021/01/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能"><a href="#用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能" class="headerlink" title="用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能"></a>用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能</h2><h2 id="最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线"><a href="#最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线" class="headerlink" title="最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线"></a>最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线</h2>]]></content>
+    <content><![CDATA[<h2 id="用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能"><a href="#用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能" class="headerlink" title="用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能"></a>用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能</h2><h2 id="最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线"><a href="#最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线" class="headerlink" title="最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线"></a>最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线</h2><a id="more"></a>]]></content>
       <categories>
         <category>原创</category>
       </categories>
