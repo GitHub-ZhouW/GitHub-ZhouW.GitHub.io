@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>git命令</title>
+    <url>/2021/01/15/git%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git init - 初始化仓库</span><br><span class="line">git add . - 添加文件到暂存区/仓库</span><br><span class="line">git commit - 将暂存区内容添加到仓库中</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">-拷贝一份远程仓库（下载一个远程项目）</span></span><br><span class="line"><span class="title">git</span> status -查看仓库当前的状态，显示有变更的文件</span><br><span class="line">git diff -比较文件的不同，即暂存区和工作区的差异</span><br><span class="line">git reset -回退版本</span><br><span class="line">git rm -删除工作区文件git mv -移动或重命名工作区文件</span><br><span class="line">git log -查看历史提交记录</span><br><span class="line">git blame <span class="tag">&lt;file&gt;</span> -以列表形式查看指定文件的历史修改记录</span><br><span class="line">git remote -远程仓库操作</span><br><span class="line">git fetch -从远程获取代码库</span><br><span class="line">git pull -下载远程代码并合并</span><br><span class="line">git push -上传远程代码并合并</span><br><span class="line">git branch (branchname) -创建分支命令</span><br><span class="line">    git branch 没有参数时，git branch 会列出你在本地的分支</span><br><span class="line">git checkout (branchname) -切换分支命令git merge -合并分支命令</span><br><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">0</span> -创建一个带注解的标签</span><br><span class="line">    git <span class="keyword">tag</span> <span class="title">-查看所有标签</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>转载</category>
+      </categories>
+      <tags>
+        <tag>&lt;a&gt;Git&lt;/a&gt;</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo</title>
     <url>/2021/01/15/hexo/</url>
     <content><![CDATA[<h2 id="出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME-md文件，造成通过域名无法访问"><a href="#出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME-md文件，造成通过域名无法访问" class="headerlink" title="出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME.md文件，造成通过域名无法访问"></a>出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME.md文件，造成通过域名无法访问</h2><h2 id="解决办法为在根目录source文件下创建CNAME文件，-无后缀"><a href="#解决办法为在根目录source文件下创建CNAME文件，-无后缀" class="headerlink" title="解决办法为在根目录source文件下创建CNAME文件，*无后缀"></a>解决办法为在根目录source文件下创建CNAME文件，*无后缀</h2><a id="more"></a>]]></content>
@@ -12,47 +24,100 @@
       </tags>
   </entry>
   <entry>
-    <title>node.js与vue.js设置跨域</title>
-    <url>/2021/01/22/node-js%E4%B8%8Evue-js%E8%AE%BE%E7%BD%AE%E8%B7%A8%E5%9F%9F/</url>
-    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">一、vue.js前端设置跨域：</span><br><span class="line">在根目录下创建vue.config.js文件，然后写入：</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    devServer:&#123;</span><br><span class="line">        proxy:&#123;</span><br><span class="line">            <span class="string">&quot;/api&quot;</span>:&#123;</span><br><span class="line">                target:<span class="string">&quot;http://localhost:3000/users&quot;</span>,</span><br><span class="line">                ws: <span class="literal">true</span>, <span class="comment">//代理的WebSockets</span></span><br><span class="line">                changeOrigin: <span class="literal">true</span>, <span class="comment">//需要虚拟主机站点</span></span><br><span class="line">                pathRewrite: &#123;</span><br><span class="line">                    <span class="string">&quot;^/api&quot;</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">二、node.js后端设置跨域：</span><br><span class="line">在app.js里加入：</span><br><span class="line">app.all(<span class="string">&#x27;*&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line">res.header(<span class="string">&quot;Access-Control-Allow-Origin&quot;</span>, <span class="string">&quot;*&quot;</span>);</span><br><span class="line">res.header(<span class="string">&quot;Access-Control-Allow-Headers&quot;</span>, <span class="string">&quot;X-Requested-With&quot;</span>);</span><br><span class="line">res.header(<span class="string">&quot;Access-Control-Allow-Methods&quot;</span>,<span class="string">&quot;PUT,POST,GET,DELETE,OPTIONS&quot;</span>);</span><br><span class="line">res.header(<span class="string">&quot;X-Powered-By&quot;</span>,<span class="string">&#x27; 3.2.1&#x27;</span>);</span><br><span class="line">res.header(<span class="string">&quot;Content-Type&quot;</span>, <span class="string">&quot;application/json;charset=utf-8&quot;</span>);</span><br><span class="line">next();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>原创</category>
-      </categories>
-      <tags>
-        <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vi的使用</title>
-    <url>/2021/01/25/vi%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;&#x3D;启动 vi&#x2F;vim，便进入了命令模式&#x3D;&gt;</span><br><span class="line">i 切换到输入模式，以输入字符；</span><br><span class="line">x 删除当前光标所在处的字符；</span><br><span class="line">: 切换到底线命令模式，以在最底一行输入命令；</span><br><span class="line">&lt;&#x3D;输入模式&#x3D;&gt;</span><br><span class="line">字符按键以及Shift组合，输入字符</span><br><span class="line">ENTER，回车键，换行</span><br><span class="line">BACK SPACE，退格键，删除光标前一个字符</span><br><span class="line">DEL，删除键，删除光标后一个字符</span><br><span class="line">方向键，在文本中移动光标</span><br><span class="line">HOME&#x2F;END，移动光标到行首&#x2F;行尾</span><br><span class="line">Page Up&#x2F;Page Down，上&#x2F;下翻页</span><br><span class="line">Insert，切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线</span><br><span class="line">ESC，退出输入模式，切换到命令模式</span><br><span class="line">&lt;&#x3D;底线命令模式&#x3D;&gt;</span><br><span class="line">q 退出程序</span><br><span class="line">w 保存文件</span><br><span class="line">wq 保存并退出</span><br><span class="line">wq! 强制储存后离开 (常用)</span><br><span class="line">w! 若文件属性为『只读』时，强制写入该档案</span><br><span class="line">q! 若曾修改过档案，又不想储存，使用 ! 为强制离开不储存档案</span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>原创</category>
-      </categories>
-      <tags>
-        <tag>&lt;a&gt;vi&lt;/a&gt;</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇weblog</title>
-    <url>/2021/01/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能"><a href="#用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能" class="headerlink" title="用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能"></a>用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能</h2><h2 id="最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线"><a href="#最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线" class="headerlink" title="最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线"></a>最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线</h2><a id="more"></a>]]></content>
-      <categories>
-        <category>原创</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>git命令</title>
-    <url>/2021/01/15/git%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git init - 初始化仓库</span><br><span class="line">git add . - 添加文件到暂存区/仓库</span><br><span class="line">git commit - 将暂存区内容添加到仓库中</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">-拷贝一份远程仓库（下载一个远程项目）</span></span><br><span class="line"><span class="title">git</span> status -查看仓库当前的状态，显示有变更的文件</span><br><span class="line">git diff -比较文件的不同，即暂存区和工作区的差异</span><br><span class="line">git reset -回退版本</span><br><span class="line">git rm -删除工作区文件git mv -移动或重命名工作区文件</span><br><span class="line">git log -查看历史提交记录</span><br><span class="line">git blame <span class="tag">&lt;file&gt;</span> -以列表形式查看指定文件的历史修改记录</span><br><span class="line">git remote -远程仓库操作</span><br><span class="line">git fetch -从远程获取代码库</span><br><span class="line">git pull -下载远程代码并合并</span><br><span class="line">git push -上传远程代码并合并</span><br><span class="line">git branch (branchname) -创建分支命令</span><br><span class="line">    git branch 没有参数时，git branch 会列出你在本地的分支</span><br><span class="line">git checkout (branchname) -切换分支命令git merge -合并分支命令</span><br><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">0</span> -创建一个带注解的标签</span><br><span class="line">    git <span class="keyword">tag</span> <span class="title">-查看所有标签</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
+    <title>markdown的使用</title>
+    <url>/2021/01/25/markdown%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>·使用 = 和 - 标记一级和二级标题<br>= 一级标题</p>
+<ul>
+<li>二级标题<br>·使用 # 号标记<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6>·段落的换行是使用两个以上空格加上回车<br>·字体</li>
+</ul>
+<p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong><br><strong><em>粗斜体文本</em></strong><br>·分隔线</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<p>·删除线在文字的两端加上两个波浪线 ~~<br>·下划线通过 HTML 的 <u> 标签来实现<br>·脚注 [^要注明的文本]<br>·列表<br>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记</p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项<br>有序列表使用数字并加上 . 号来表示</li>
+</ul>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项<br>·列表嵌套 只需在子列表中的选项前面添加四个空格<br>·列表中使用区块</li>
+</ol>
+<ul>
+<li>第一项<blockquote>
+<p>菜鸟教程<br>学的不仅是技术更是梦想</p>
+</blockquote>
+</li>
+<li>第二项<br>·区块 在段落开头使用&gt;符号，区块是可以嵌套的，一个&gt;符号是最外层，两个&gt;符号是第一层嵌套，以此类推<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套<br>·区块中使用列表<br>区块中使用列表</p>
+</blockquote>
+</blockquote>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项<br>·代码 如果是段落上的一个函数或片段的代码可以用反引号把它包起来``<br>代码区块使用 4 个空格或者一个制表符（Tab 键）<br>也可以用 <code>xx</code>包裹一段代码，并指定一种语言（也可以不指定）<br>·链接<br><a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">链接名称</a><br>&lt;链接地址&gt;<br>·图片<br><img src="%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80" alt="alt 属性文本"><br><img src="%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80" alt="alt 属性文本" title="可选标题"><br>·表格<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>·表格的对齐方式</td>
+<td></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<p>-: 设置内容和标题栏居右对齐<br>:- 设置内容和标题栏居左对齐<br>:-: 设置内容和标题栏居中对齐<br>·支持HTML元素 目前支持的 HTML 元素有：<kbd> <b> <i> <em> <sup> <sub> <br>等<br>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑<br>·转义<br><strong>文本加粗</strong><br>** 正常显示星号 **<br>·符号前面加上反斜杠来帮助插入普通的符号<br>\   反斜线<br>`   反引号</p>
+<ul>
+<li>  星号<br>_   下划线<br>{}  花括号<br>[]  方括号<br>()  小括号<h1 id="井字号"><a href="#井字号" class="headerlink" title="井字号"></a>井字号</h1></li>
+</ul>
+<ul>
+<li>  加号</li>
+</ul>
+<ul>
+<li>  减号<br>.   英文句点<br>!   感叹号<a id="more"></a></li>
+</ul>
+]]></content>
       <categories>
         <category>转载</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;Git&lt;/a&gt;</tag>
+        <tag>&lt;a&gt;markdown&lt;/a&gt;</tag>
       </tags>
   </entry>
   <entry>
@@ -69,5 +134,45 @@
       <tags>
         <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>node.js与vue.js设置跨域</title>
+    <url>/2021/01/22/node-js%E4%B8%8Evue-js%E8%AE%BE%E7%BD%AE%E8%B7%A8%E5%9F%9F/</url>
+    <content><![CDATA[<p>一、vue.js前端设置跨域：</p>
+<h2 id="在根目录下创建vue-config-js文件，然后写入："><a href="#在根目录下创建vue-config-js文件，然后写入：" class="headerlink" title="在根目录下创建vue.config.js文件，然后写入："></a>在根目录下创建vue.config.js文件，然后写入：</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    devServer:&#123;</span><br><span class="line">        proxy:&#123;</span><br><span class="line">            <span class="string">&quot;/api&quot;</span>:&#123;</span><br><span class="line">                target:<span class="string">&quot;http://localhost:3000/users&quot;</span>,</span><br><span class="line">                ws: <span class="literal">true</span>, <span class="comment">//代理的WebSockets</span></span><br><span class="line">                changeOrigin: <span class="literal">true</span>, <span class="comment">//需要虚拟主机站点</span></span><br><span class="line">                pathRewrite: &#123;</span><br><span class="line">                    <span class="string">&quot;^/api&quot;</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>二、node.js后端设置跨域：</p>
+<h2 id="在app-js里加入："><a href="#在app-js里加入：" class="headerlink" title="在app.js里加入："></a>在app.js里加入：</h2><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">app.<span class="keyword">all</span>(<span class="string">&#x27;*&#x27;</span>, <span class="keyword">function</span>(req, res, next) &#123;</span><br><span class="line">res.<span class="keyword">header</span>(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);</span><br><span class="line">res.<span class="keyword">header</span>(&quot;Access-Control-Allow-Headers&quot;, &quot;X-Requested-With&quot;);</span><br><span class="line">res.<span class="keyword">header</span>(&quot;Access-Control-Allow-Methods&quot;,&quot;PUT,POST,GET,DELETE,OPTIONS&quot;);</span><br><span class="line">res.<span class="keyword">header</span>(&quot;X-Powered-By&quot;,<span class="string">&#x27; 3.2.1&#x27;</span>);</span><br><span class="line">res.<span class="keyword">header</span>(&quot;Content-Type&quot;, &quot;application/json;charset=utf-8&quot;);</span><br><span class="line">next();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>原创</category>
+      </categories>
+      <tags>
+        <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vi的使用</title>
+    <url>/2021/01/25/vi%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>&lt;=启动 vi/vim，便进入了命令模式=&gt;</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i 切换到输入模式，以输入字符；</span><br><span class="line">x 删除当前光标所在处的字符；</span><br><span class="line">: 切换到底线命令模式，以在最底一行输入命令；</span><br></pre></td></tr></table></figure>
+<p>&lt;=输入模式=&gt;</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">字符按键以及Shift组合，输入字符</span><br><span class="line">ENTER，回车键，换行</span><br><span class="line">BACK SPACE，退格键，删除光标前一个字符</span><br><span class="line">DEL，删除键，删除光标后一个字符</span><br><span class="line">方向键，在文本中移动光标</span><br><span class="line">HOME<span class="regexp">/END，移动光标到行首/</span>行尾</span><br><span class="line">Page Up<span class="regexp">/Page Down，上/</span>下翻页</span><br><span class="line">Insert，切换光标为输入<span class="regexp">/替换模式，光标将变成竖线/</span>下划线</span><br><span class="line">ESC，退出输入模式，切换到命令模式</span><br></pre></td></tr></table></figure>
+<p>&lt;=底线命令模式=&gt;</p>
+<figure class="highlight erlang-repl"><table><tr><td class="code"><pre><span class="line">q 退出程序</span><br><span class="line">w 保存文件</span><br><span class="line">wq 保存并退出</span><br><span class="line">wq! 强制储存后离开 (常用)</span><br><span class="line">w! 若文件属性为『只读』时，强制写入该档案</span><br><span class="line">q! 若曾修改过档案，又不想储存，使用 ! 为强制离开不储存档案</span><br></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>原创</category>
+      </categories>
+      <tags>
+        <tag>&lt;a&gt;vi&lt;/a&gt;</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇weblog</title>
+    <url>/2021/01/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能"><a href="#用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能" class="headerlink" title="用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能"></a>用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能</h2><h2 id="最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线"><a href="#最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线" class="headerlink" title="最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线"></a>最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线</h2><a id="more"></a>]]></content>
+      <categories>
+        <category>原创</category>
+      </categories>
   </entry>
 </search>
