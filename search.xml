@@ -30,9 +30,9 @@
 <figure class="highlight asciidoc"><table><tr><td class="code"><pre><span class="line"><span class="section">= 一级标题</span></span><br><span class="line"><span class="bullet">- </span>二级标题</span><br></pre></td></tr></table></figure>
 <p>=&gt;使用 # 号标记</p>
 <figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>=&gt;段落的换行是使用两个以上空格加上回车<br>=&gt;字体</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><a id="more"></a>
+<p>=&gt;段落的换行是使用两个以上空格加上回车<br>=&gt;字体</p>
 <figure class="highlight asciidoc"><table><tr><td class="code"><pre><span class="line"><span class="strong">*斜体文本*</span></span><br><span class="line"><span class="emphasis">_斜体文本_</span></span><br><span class="line"><span class="strong">**粗体文本**</span></span><br><span class="line"><span class="emphasis">__粗体文本__</span></span><br><span class="line"><span class="strong">***粗斜体文本**</span>*</span><br><span class="line"><span class="emphasis">___粗斜体文本__</span>_</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
 <p>=&gt;分隔线</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">*</span> <span class="emphasis">* *</span></span></span><br><span class="line"><span class="strong">**</span><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">----------</span></span></span><br></pre></td></tr></table></figure>
 <hr>
@@ -138,7 +138,7 @@
         <category>转载</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;markdown&lt;/a&gt;</tag>
+        <tag>&lt;a&gt;MarkDown&lt;/a&gt;</tag>
       </tags>
   </entry>
   <entry>
@@ -182,10 +182,10 @@
 <figure class="highlight erlang-repl"><table><tr><td class="code"><pre><span class="line">q 退出程序</span><br><span class="line">w 保存文件</span><br><span class="line">wq 保存并退出</span><br><span class="line">wq! 强制储存后离开 (常用)</span><br><span class="line">w! 若文件属性为『只读』时，强制写入该档案</span><br><span class="line">q! 若曾修改过档案，又不想储存，使用 ! 为强制离开不储存档案</span><br></pre></td></tr></table></figure>
 <a id="more"></a>]]></content>
       <categories>
-        <category>原创</category>
+        <category>转载</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;vi&lt;/a&gt;</tag>
+        <tag>&lt;a&gt;Vi&lt;/a&gt;</tag>
       </tags>
   </entry>
   <entry>
