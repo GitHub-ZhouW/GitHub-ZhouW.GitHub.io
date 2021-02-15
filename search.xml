@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Win10系统重装</title>
-    <url>/2021/02/14/Win10%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85/</url>
-    <content><![CDATA[<ul>
-<li>我的设备介绍<blockquote>
-<p>神舟K640E<br>原系统：win10（莫名报错误蓝屏无法使用，安全模式也不行）<br>装机软件选择的是大白菜，因为看了下步骤比较简单</p>
-</blockquote>
-</li>
-<li>准备工作<blockquote>
-<p>金士顿U盘16G一个<br>下载Windows系统，（我是在msdn itellyou下载的，操作系统–&gt;系统版本–&gt;详细信息–&gt;复制ed2k链接到迅雷之类的工具下载）<br>百度搜索大白菜，在官网下载大白菜超级U盘装机工具</p>
-</blockquote>
-</li>
-<li>操作步骤-U盘<blockquote>
-<p>打开大白菜超级U盘装机工具，点击主界面的【U盘启动】模块，然后选择【默认模式】<br>在【请选择】后面选择需要制作启动的设备（插入的U盘，一般会默认读取该设备）<br>模式选择【USB-HDD】，格式选择【NTFS】，然后点击【一键制作USB启动盘】<br>等待进程走完后可以点击模拟启动–&gt;BIOS，如果能进入装机界面则说明制作U盘启动盘已经成功<br>将下载好的系统复制到U盘下</p>
-</blockquote>
-<a id="more"></a></li>
-<li>操作步骤-电脑<blockquote>
-<p>U盘插入电脑，重启主机，在开机界面按F2进入Bios设置界面（每个品牌可能不太一样，我的是F7）<br>通过【左右方向键】切换到【Boot】，然后利用【上下方向键】键选择【removeble device】（不同电脑的显示也会有所不同，认准带USB字样开头或者是u盘名称即可）<br>使用【+】键将u盘选项移至第一位，然后按下F10保存，回车即可进入PE<br>通过【↑↓】键选择【启动Win10 X64 PE(2G以上内存)】，然后回车进入winpe桌面<br>在进入一键重装界面后，点击【打开】选择你想要安装的win10系统以及安装路径（一般默认为C盘），然后点击【执行】<br>选择好所需系统，点击【下一步】，完成后点击【立即安装】<br>会跳出一个关于还原设置的弹窗，选择【是】<br>勾选【完成后重启】，在重启前拔掉U盘，以免再次进入大白菜PE系统</p>
-</blockquote>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>转载</category>
-      </categories>
-      <tags>
-        <tag>&lt;a&gt;Windows&lt;/a&gt;</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git命令</title>
-    <url>/2021/01/15/git%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git init - 初始化仓库</span><br><span class="line">git add . - 添加文件到暂存区/仓库</span><br><span class="line">git commit - 将暂存区内容添加到仓库中</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">-拷贝一份远程仓库（下载一个远程项目）</span></span><br><span class="line"><span class="title">git</span> status -查看仓库当前的状态，显示有变更的文件</span><br><span class="line">git diff -比较文件的不同，即暂存区和工作区的差异</span><br><span class="line">git reset -回退版本</span><br><span class="line">git rm -删除工作区文件git mv -移动或重命名工作区文件</span><br><span class="line">git log -查看历史提交记录</span><br><span class="line">git blame <span class="tag">&lt;file&gt;</span> -以列表形式查看指定文件的历史修改记录</span><br><span class="line">git remote -远程仓库操作</span><br><span class="line">git fetch -从远程获取代码库</span><br><span class="line">git pull -下载远程代码并合并</span><br><span class="line">git push -上传远程代码并合并</span><br><span class="line">git branch (branchname) -创建分支命令</span><br><span class="line">    git branch 没有参数时，git branch 会列出你在本地的分支</span><br><span class="line">git checkout (branchname) -切换分支命令git merge -合并分支命令</span><br><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">0</span> -创建一个带注解的标签</span><br><span class="line">    git <span class="keyword">tag</span> <span class="title">-查看所有标签</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>转载</category>
-      </categories>
-      <tags>
-        <tag>&lt;a&gt;Git&lt;/a&gt;</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo</title>
     <url>/2021/01/15/hexo/</url>
     <content><![CDATA[<h2 id="出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME-md文件，造成通过域名无法访问"><a href="#出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME-md文件，造成通过域名无法访问" class="headerlink" title="出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME.md文件，造成通过域名无法访问"></a>出现冲突，hexo添加新文章时会覆盖掉gitpages的CNAME.md文件，造成通过域名无法访问</h2><h2 id="解决办法为在根目录source文件下创建CNAME文件，-无后缀"><a href="#解决办法为在根目录source文件下创建CNAME文件，-无后缀" class="headerlink" title="解决办法为在根目录source文件下创建CNAME文件，*无后缀"></a>解决办法为在根目录source文件下创建CNAME文件，*无后缀</h2><a id="more"></a>]]></content>
@@ -171,18 +130,15 @@
       </tags>
   </entry>
   <entry>
-    <title>node.js+express+vue-cli配置</title>
-    <url>/2021/01/15/node-js-express-vue-cli%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>node与express:</p>
-<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> xxx//文件夹名称</span><br><span class="line">npm init //新建node项目</span><br><span class="line">npm install <span class="built_in">express</span> --<span class="built_in">save</span></span><br><span class="line">npm install <span class="built_in">express</span>-grenerator -g</span><br><span class="line"><span class="built_in">express</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<p>vue与vue/cli:</p>
-<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> install @vue/cli -g</span><br><span class="line">vue create xxx</span><br></pre></td></tr></table></figure>
+    <title>git命令</title>
+    <url>/2021/01/15/git%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git init - 初始化仓库</span><br><span class="line">git add . - 添加文件到暂存区/仓库</span><br><span class="line">git commit - 将暂存区内容添加到仓库中</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">-拷贝一份远程仓库（下载一个远程项目）</span></span><br><span class="line"><span class="title">git</span> status -查看仓库当前的状态，显示有变更的文件</span><br><span class="line">git diff -比较文件的不同，即暂存区和工作区的差异</span><br><span class="line">git reset -回退版本</span><br><span class="line">git rm -删除工作区文件git mv -移动或重命名工作区文件</span><br><span class="line">git log -查看历史提交记录</span><br><span class="line">git blame <span class="tag">&lt;file&gt;</span> -以列表形式查看指定文件的历史修改记录</span><br><span class="line">git remote -远程仓库操作</span><br><span class="line">git fetch -从远程获取代码库</span><br><span class="line">git pull -下载远程代码并合并</span><br><span class="line">git push -上传远程代码并合并</span><br><span class="line">git branch (branchname) -创建分支命令</span><br><span class="line">    git branch 没有参数时，git branch 会列出你在本地的分支</span><br><span class="line">git checkout (branchname) -切换分支命令git merge -合并分支命令</span><br><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">0</span> -创建一个带注解的标签</span><br><span class="line">    git <span class="keyword">tag</span> <span class="title">-查看所有标签</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>]]></content>
       <categories>
-        <category>原创</category>
+        <category>转载</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
+        <tag>&lt;a&gt;Git&lt;/a&gt;</tag>
       </tags>
   </entry>
   <entry>
@@ -199,6 +155,29 @@
       <tags>
         <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>node.js+express+vue-cli配置</title>
+    <url>/2021/01/15/node-js-express-vue-cli%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>node与express:</p>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> xxx//文件夹名称</span><br><span class="line">npm init //新建node项目</span><br><span class="line">npm install <span class="built_in">express</span> --<span class="built_in">save</span></span><br><span class="line">npm install <span class="built_in">express</span>-grenerator -g</span><br><span class="line"><span class="built_in">express</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>vue与vue/cli:</p>
+<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> install @vue/cli -g</span><br><span class="line">vue create xxx</span><br></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>原创</category>
+      </categories>
+      <tags>
+        <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇weblog</title>
+    <url>/2021/01/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能"><a href="#用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能" class="headerlink" title="用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能"></a>用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能</h2><h2 id="最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线"><a href="#最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线" class="headerlink" title="最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线"></a>最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线</h2><a id="more"></a>]]></content>
+      <categories>
+        <category>原创</category>
+      </categories>
   </entry>
   <entry>
     <title>vi的使用</title>
@@ -218,11 +197,32 @@
       </tags>
   </entry>
   <entry>
-    <title>第一篇weblog</title>
-    <url>/2021/01/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能"><a href="#用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能" class="headerlink" title="用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能"></a>用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能</h2><h2 id="最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线"><a href="#最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线" class="headerlink" title="最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线"></a>最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线</h2><a id="more"></a>]]></content>
+    <title>Win10系统重装</title>
+    <url>/2021/02/14/Win10%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85/</url>
+    <content><![CDATA[<ul>
+<li>我的设备介绍<blockquote>
+<p>神舟K640E<br>原系统：win10（莫名报错误蓝屏无法使用，安全模式也不行）<br>装机软件选择的是大白菜，因为看了下步骤比较简单</p>
+</blockquote>
+</li>
+<li>准备工作<blockquote>
+<p>金士顿U盘16G一个<br>下载Windows系统，（我是在msdn itellyou下载的，操作系统–&gt;系统版本–&gt;详细信息–&gt;复制ed2k链接到迅雷之类的工具下载）<br>百度搜索大白菜，在官网下载大白菜超级U盘装机工具</p>
+</blockquote>
+</li>
+<li>操作步骤-U盘<blockquote>
+<p>打开大白菜超级U盘装机工具，点击主界面的【U盘启动】模块，然后选择【默认模式】<br>在【请选择】后面选择需要制作启动的设备（插入的U盘，一般会默认读取该设备）<br>模式选择【USB-HDD】，格式选择【NTFS】，然后点击【一键制作USB启动盘】<br>等待进程走完后可以点击模拟启动–&gt;BIOS，如果能进入装机界面则说明制作U盘启动盘已经成功<br>将下载好的系统复制到U盘下</p>
+</blockquote>
+<a id="more"></a></li>
+<li>操作步骤-电脑<blockquote>
+<p>U盘插入电脑，重启主机，在开机界面按F2进入Bios设置界面（每个品牌可能不太一样，我的是F7）<br>通过【左右方向键】切换到【Boot】，然后利用【上下方向键】键选择【removeble device】（不同电脑的显示也会有所不同，认准带USB字样开头或者是u盘名称即可）<br>使用【+】键将u盘选项移至第一位，然后按下F10保存，回车即可进入PE<br>通过【↑↓】键选择【启动Win10 X64 PE(2G以上内存)】，然后回车进入winpe桌面<br>在进入一键重装界面后，点击【打开】选择你想要安装的win10系统以及安装路径（一般默认为C盘），然后点击【执行】<br>选择好所需系统，点击【下一步】，完成后点击【立即安装】<br>会跳出一个关于还原设置的弹窗，选择【是】<br>勾选【完成后重启】，在重启前拔掉U盘，以免再次进入大白菜PE系统</p>
+</blockquote>
+</li>
+</ul>
+]]></content>
       <categories>
-        <category>原创</category>
+        <category>转载</category>
       </categories>
+      <tags>
+        <tag>&lt;a&gt;Windows&lt;/a&gt;</tag>
+      </tags>
   </entry>
 </search>
