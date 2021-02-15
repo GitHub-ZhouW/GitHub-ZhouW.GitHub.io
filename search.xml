@@ -26,7 +26,7 @@
         <category>转载</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;Windows&lt;/a&gt;</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -38,7 +38,7 @@
         <category>转载</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;Git&lt;/a&gt;</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -49,7 +49,7 @@
         <category>原创</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;Hexo&lt;/a&gt;</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -167,7 +167,7 @@
         <category>转载</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;MarkDown&lt;/a&gt;</tag>
+        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
@@ -182,7 +182,8 @@
         <category>原创</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
+        <tag>Node</tag>
+        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -197,7 +198,8 @@
         <category>原创</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;Node&lt;/a&gt;&lt;a&gt;Vue&lt;/a&gt;</tag>
+        <tag>Node</tag>
+        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -214,16 +216,26 @@
         <category>转载</category>
       </categories>
       <tags>
-        <tag>&lt;a&gt;Vi&lt;/a&gt;</tag>
+        <tag>Vi</tag>
       </tags>
   </entry>
   <entry>
     <title>第一篇weblog</title>
     <url>/2021/01/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能"><a href="#用的是hexo-gitpages，省去了服务器搭建，完成了最简单的博客功能" class="headerlink" title="用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能"></a>用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能</h2><h2 id="最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线"><a href="#最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线" class="headerlink" title="最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线"></a>最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线</h2><img src="/image/logo.svg" class="full-image" />
-<a id="more"></a>]]></content>
+    <content><![CDATA[<ul>
+<li>用的是hexo+gitpages，省去了服务器搭建，完成了最简单的博客功能<blockquote>
+<p>模板采用了比较流行的NEXT，评论功能选择了来必力（livere）</p>
+</blockquote>
+<h2 id="最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线"><a href="#最开始设想的是node-express-vue完成个人博客，大致搭建完成，等个合适的时机上线" class="headerlink" title="最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线"></a>最开始设想的是node+express+vue完成个人博客，大致搭建完成，等个合适的时机上线</h2><img src="/image/logo.svg" class="full-image" />
+<a id="more"></a></li>
+</ul>
+]]></content>
       <categories>
         <category>原创</category>
       </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
   </entry>
 </search>
